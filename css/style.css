@@ -1,0 +1,49 @@
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+.navigation a {
+  text-decoration: none;
+}
+.tittle-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Main Code */
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+}
+.message-us {
+  flex-basis: 40%;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: burlywood;
+  border-radius: 20px;
+}
+
+#review-section {
+  flex-basis: 400%;
+  flex-grow: 0;
+}
+
+#review-section img {
+  max-width: 400%;
+  max-height: 150%;
+}
+
+.input-message-us {
+  display: flex;
+  flex-direction: column;
+}
