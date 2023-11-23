@@ -3,43 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GUTRAV GUIDE FOR TRAVELLER</title>
+    <title>GUIDE FOR TRAVELLER</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="javascript" href="js/script.js">
+
   </head>
   <body>
+    
+<header>
 
-    <header>
 
-</div>
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
- <div class="logo">
-  <a href="#logo">logo</a>
+  <a href="#booking-section">Booking</a>
+  <a href="#about-us">About</a>
+ <div id="logo">
+  <img src="assets/20231121_105941_0000.jpeg" alt="logo" class="logo-img">
  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="js/script.js" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
+</section>
 
       <section class="tittle-header" style="color: azure;">
         <h1>Best Guide for Traveling</h1>
         <h4>Traveller best choice for best experience</h4>
       </section>
-    </header>
+
+</header> 
   <main id="main-section">
     <section class="review-section">
-      <img src="assets/lmj5rsv2.bmp" alt="nature" class="responsive-img">
-      <h5 class="Text-Exp">Guide you Until At The Peak</h5>
-     <div class="profil">
- <img src="assets/WhatsApp Image 2023-11-21 at 01.09.38.jpeg" alt="Avatar" class="avatar"> 
-</div>
-</section>
-    <div class="container">
-  <form name="myform" class="contact-form">
+      <img src="assets/b7pfx9e9.bmp" alt="nature" class="responsive-img">
 
-<h3> Contact Us :</h3>
+      <p class="text-container">Welcome to the world of travel full of adventure and beauty! As time goes by and the need for unforgettable travel experiences increases, the presence of travel agent services has become an invaluable bridge in fulfilling customers' desires and needs. Travel agents, as your travel partners, are not just service providers, but also true friends who are ready to guide you to your dream destination. Through travel agent services, travel, which was previously complex and confusing, now becomes easier, more efficient and more enjoyable. With a wide selection of travel packages tailored to your preferences and budget, travel agents are here to provide a unique and unforgettable travel experience. We are committed to providing the best service, ensuring that every trip you make provides happy memories. In this guide, we will introduce you to the various services and advantages offered by our travel agency. Starting from explanations of interesting destinations to useful travel tips, we are ready to be your loyal friend in planning every trip. Thank you for choosing us as your travel partner. Together with a travel agent, let's explore the world and create unforgettable moments that will last forever. Enjoy every second of the journey!</p>
+  
+      <div id="feature-pack">
+
+    <h3>OUR TOUR PACKAGES</h3>
+  <p> 1. Mandalawangi Campground Camping Package</p>
+  <p> 2. Bukit Golf Camping Ground Camping Package</p>
+  <p> 3. Mount Gede Pangrango Climbing Package</p>
+  <p> 4. Outbound Package</p>
+  <p> 5. Camping Equipment Rental</p>
+  
+  </div>
+</section>
+
+<div class="container-form" id="contact-rel">
+
+<form id="myform" class="contact-form">
+
+<h1 style="color: aliceblue;"> Contact Us :</h1>
 <br>
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -47,29 +63,215 @@
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="Regency">Regency</label>
-    <input type="text" id="regency" name="regency" placeholder="Your Country..">
+    <label for="Country">Country</label>
+    <input type="text" id="Country" name="Country" placeholder="Your Country..">
     
      
 
     <label for="Message">Message</label>
     <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
-
-  </form>
-
-  </main>
+     <input type="submit" value="Submit" onclick="validateForm()">
+</div>  
+</form>
  
- 
-  <div class="feature-pack">
-    <h3>OUR TOUR PACKAGES</h3>
-  <p> Mandalawangi Campground Camping Package</p>
-  <p> Bukit Golf Camping Ground Camping Package</p>
-  <p> Mount Gede Pangrango Climbing Package</p>
-  <p> Outbound Package</p>
-  <p> Camping Equipment Rental</p>
-  
+
+</main>
+
+
+  <section class="profil-guider">
+
+  <div id="about-us">
+  <div>
+    <h1>About Us</h1>
   </div>
+  </div>
+
+  <div class="about-content">
+      <h2>Our Team</h2>
+      <p>Embark on your mountain adventure with confidence, guided by our team of experienced and passionate mountain guides. Our team members are not just experts in navigation; they are also deeply connected to the natural beauty and significance of the mountains.</p>
+      <p>Each guide is certified, ensuring your safety and providing you with valuable insights into the local flora, fauna, and cultural history.</p>
+    </div>
+
+  
+ <!-- profil -->
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="assets/k2g0fdka.bmp" alt="Kadek Prastha" style="width:290px">
+      <div class="container">
+        <h2>Kadek Prastha</h2>
+        <p class="title">Porter & Guide</p>
+        <p>Contact me through the form provided of via email.</p>
+        <p>prastha1234@gmail.com</p>
+       <a href="#contact-rel"><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="assets/jprhjxyj.bmp" alt="Susanto Mahfud" style="width:290px">
+      <div class="container">
+        <h2>Susanto Mahfud</h2>
+        <p class="title">Guide</p>
+        <p>Contact me through the form provided of via email.</p>
+        <p>susantofud12@gmail.com</p>
+        <a href="#contact-rel"><button class="button" id="callme">Contact</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="assets/8mhc1uqi.bmp" alt="Made Pastika" style="width:290px">
+      <div class="container">
+        <h2>Made Pastika</h2>
+        <p class="title">Private Porter</p>
+        <p>Contact me through the form provided of via email.</p>
+        <p>madepastibisa@gmail.com</p>
+        <a href="#contact-rel"><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</section>
+
+<section id="booking-section">
+<div>
+  <h2>Offer</h2>
+</div class="row-position">
+<div>
+ <div class="responsive">
+  <div class="gallery">
+      <img src="assets/ze12thrt.bmp" alt="Cinque Terre">
+    </a>
+    <div class="desc">Gaze upon the sunrise-kissed summits as you embark on a mountain adventure like no other.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="assets/1qd6lg30.bmp" alt="Forest">
+    </a>
+    <div class="desc">Discover the hidden treasures nestled among the rugged slopes of these iconic peaks.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="assets/1erw0dxh.bmp" alt="Northern Lights">
+    </a>
+    <div class="desc">Capture the essence of serenity as you witness the mountain's majestic silhouette against the vibrant sunset</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="assets/pf2ckfwm.bmp" alt="Mountains">
+    </a>
+    <div class="desc">Each step on our guided trek unveils a new perspective of the awe-inspiring mountainous landscapes</div>
+  </div>
+</div>
+
+<div class="clearfix"></div> 
+</div>
+
+</div class="row-position2">
+<div>
+ <div class="responsive2">
+  <div class="gallery">
+      <img src="assets/o6dk7bq9.bmp" alt="Cinque Terre">
+    </a>
+    <div class="desc2">Immerse yourself in the tranquil beauty of cascading waterfalls against the backdrop of towering peaks</div>
+  </div>
+</div>
+
+<div class="responsive2">
+  <div class="gallery2">
+      <img src="assets/yahtm9c0.bmp" alt="Forest">
+    </a>
+    <div class="desc2">Feel the thrill of conquering challenging trails with our expertly curated mountain expeditions.</div>
+  </div>
+</div>
+
+<div class="responsive2">
+  <div class="gallery2">
+      <img src="assets/rbum3blh.bmp" alt="Northern Lights">
+    </a>
+    <div class="desc2">Witness the dance of clouds around the mountain peaks, creating a surreal atmosphere of wonder.</div>
+  </div>
+</div>
+
+<div class="responsive2">
+  <div class="gallery2">
+      <img src="assets/2xkjxqgg.bmp" alt="Mountains">
+    </a>
+    <div class="desc2">Explore the rich biodiversity thriving in the shadow of these magnificent and ancient mountains</div>
+  </div>
+</div>
+
+<section id="booking-section">
+    <div class="row-position">
+      <div class="responsive">
+        <div class="gallery">
+          <img src="assets/ze12thrt.bmp" alt="Cinque Terre" onclick="openModal('assets/ze12thrt.bmp')">
+          <div class="desc">Gaze upon the sunrise-kissed summits as you embark on a mountain adventure like no other.</div>
+        </div>
+      </div>
+
+      <!-- Add more gallery items as needed -->
+
+      <div class="clearfix"></div> 
+    </div>
+
+    <div class="row-position2">
+      <!-- Add more gallery items as needed -->
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  </section>
+
+
+<div class="clearfix2"></div> 
+</div>
+
+</section>
+
+ <div class="facilities">
+      <ul>
+        <h1>Our Facilities</h1>
+        <li>Professional and Certified Mountain Guides</li>
+        <li>Customized Itineraries for Various Skill Levels</li>
+        <li>Top-Quality Camping Equipment</li>
+        <li>Emergency Response and First Aid Training</li>
+        <li>Local Knowledge and Cultural Insights</li>
+      </ul>
+    </div>
+  </section>
+
+<section class="Ending">
+  <Div>
+    <h2>Want To Use Our Service?</h2>
+    <p>To contact further press the button below then press the contact button</p>
+  <a target="_blank" href="#about-us">
+  <input type="button" value="Contact" class="service-contact"></a>
+  <div class="blank"></div>
+</Div>
+</section>
   </body>
+
+
+  <div class="footer">
+    <p> © 2023 Your MOUNTRACK - Mountains AND Tracking </p>
+    <p>Made with <span class="heart">&#10084;</span> by I Ketut Suardana</p>
+  </div>
+
+
+
 </html>
