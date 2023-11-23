@@ -1,5 +1,3 @@
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -10,7 +8,6 @@
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
@@ -37,28 +34,33 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 22px;
   text-decoration: none;
   font-size: 17px;
   font-family: helvetica;
 }
 
-.logo {
-  float: left;
+.logo-img {
+  position: absolute;
+  top: -12px;
+  left: 7px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  flex: content;
+  clear: both;
 }
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #189fc4;
+  background-color: #4caf50;
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
@@ -67,43 +69,39 @@
   width: 100%;
   max-width: 400px;
   height: auto;
- padding-left: 5%;
+  padding-left: 5%;
 }
 
- /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc;
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical
+.container-form {
+  background-color: #4caf50;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 25px;
+  height: 150%;
+  color: white;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #ffffff;
-  color: #189fc4;
-  padding: 12px 20px;
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #45a049;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-
-input[type=submit]:hover {
-  background-color: white;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
-
-
-.container {
-  border-radius: 5px;
-  background-color: #189fc4;
-  padding: 20px;
-} 
-
 
 .tittle-header {
   display: flex;
@@ -123,7 +121,6 @@ input[type=submit]:hover {
   background-color: #2a2c2d;
 }
 
-
 .review-section {
   flex-basis: 300%;
   flex-grow: 0;
@@ -134,32 +131,316 @@ input[type=submit]:hover {
   max-height: 100%;
 }
 
-.Text-Exp {
+.text-container {
   display: flex;
   color: #ffffff;
   padding-left: 5%;
+  padding-right: 10%;
+  font-family: sans-serif;
+  text-align: justify;
 }
 
-
-.avatar {
-  vertical-align: middle;
-  width: 90px;
-  height: 90px;
-  border-radius: 70%;
-  
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  
-  
-}
-
-
-  
-}
-
-#Touring-Feature {
+#feature-pack {
   display: flex;
   flex-direction: column;
+  padding-left: 5%;
+  color: aliceblue;
+  background-color: #68c418;
+  margin: 5%;
+}
+
+#about-us {
+  display: grid;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Helvetica;
+}
+/* Three columns side by side */
+.column {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  width: 33%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column img {
+    width: 100%;
+  }
+}
+
+.card {
+  width: fit-content;
+  background-color: #979b94;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  padding-top: 40px;
+  padding-left: 35px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 0 16px;
+  padding-bottom: 10%;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: fit-content;
+}
+
+.button:hover {
+  background-color: #21ae2d;
+}
+
+.profil-guider {
+  display: grid;
+  padding-top: 5px;
+  background-color: #2a2c2d;
+  padding-left: 7%;
+}
+
+#booking-section {
+  display: grid;
+  background-color: #2a2c2d;
+  color: #ddd;
+  text-align: center;
+}
+#booking-section h2 {
+  font-size: 80px;
+  font-family: helvetica;
+  color: #fff;
+  text-align: center;
+}
+
+.row-position {
+  flex-direction: row;
+}
+
+div.gallery {
+  margin-bottom: 10%;
+  flex-direction: row;
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-position2 {
+  flex-direction: row;
+}
+
+div.gallery2 {
+  margin-bottom: 10%;
+  flex-direction: row;
+  border: 1px solid #ccc;
+}
+
+div.gallery2:hover {
+  border: 1px solid #777;
+}
+
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc2 {
+  padding: 15px;
+
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive2 {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive2 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive2 {
+    width: 100%;
+  }
+}
+
+.clearfix2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Ending {
+  background-color: #2a2c2d;
+  font-family: helvetica;
+  font-size: 150%;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px solid #000;
+}
+
+.service-contact {
+  display: inline-block;
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 90px;
+  padding-right: 90px;
+  border-radius: 9px;
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+.service-contact:hover {
+  border: 2px solid #ffffff;
+  background-color: #21ae2d;
+}
+
+.blank {
+  background-color: #2a2c2d;
+  display: grid;
+  padding-top: 200px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.about-content {
+  width: 70%;
+  color: #ffffff;
+}
+
+.about-content h2 {
+  color: #ffffff;
+}
+
+.facilities ul {
+  list-style: inside;
+  padding: 70px;
+}
+
+.facilities ul li {
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: #2a2c2d;
+  text-align: center;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
+}
+
+.heart {
+  color: #ff0066;
 }
